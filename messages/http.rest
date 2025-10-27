@@ -1,0 +1,22 @@
+###List all messages
+GET http://localhost:3000/messages
+
+
+###create a new message
+POST http://localhost:3000/messages
+content-type:application/json
+
+{
+    "content":"hi there"
+}
+
+### error req..
+POST http://localhost:3000/messages
+content-type:application/json
+
+{
+    "content":2
+}
+
+###get a perticular message
+GET http://localhost:3000/messages/1761583965926
